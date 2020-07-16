@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prevision bordeau</title>
+</head>
+<body>
+<table style="border: 2px">
+    <thead>
+    <td style="justify-content: center; text-align: center">heure</td>
+    <td style="justify-content: center; text-align: center">prevision</td>
+    </thead>
+    {% for result in results %}
+    <tr>
+
+        <td style="justify-content: center; text-align: center"> {{ result[0]}}</td>
+        <td style="justify-content: center; text-align: center"> {{ result[1]}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
